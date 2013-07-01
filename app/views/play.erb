@@ -1,0 +1,50 @@
+<embed name="lostmojo" src="music.mp3" loop="true" hidden="true" autostart="true">
+
+  <table class="racer_table" cellpadding="0" cellspacing="0">
+  <tr id="player1_strip">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr id="player2_strip">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<div id="game_id" style="visibility: hidden;"><%= @game.id %></div>
+
+<div id="cats" style="visibility: hidden;">
+    <% @game.cats.each_with_index do |cat, i| %>
+        <p id="cat<%= i %>"><%= cat.initials %></p>
+    <% end %>
+</div>

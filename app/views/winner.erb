@@ -1,0 +1,6 @@
+<h1><%= @game.winner %> Won!</h1><br><br>
+<h1>Time: <%= @game.end_at.to_i - @game.start_at.to_i  %> seconds!</h1><br><br>
+<div id="winner">
+  <img src="http://localhost:9393/images/nyan1.gif" /><br><br>
+  <a href="/">Play Again?</a>
+</div>

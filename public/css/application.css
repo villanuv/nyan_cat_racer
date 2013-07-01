@@ -1,9 +1,29 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+body {
+  background: url('/images/bg.gif');
 }
-th {
-  text-align: left;
+
+.racer_table td {
+  height: 20px;
+  width: 43px;
 }
+
+.visited {
+  background: url('/images/rainbow.jpg') repeat-x;
+}
+
+.racer_table td.active {
+  background-color: black;
+}
+
+h1{
+  color: yellow;
+  text-align:center;
+}
+
+
+
+#winner {
+  margin: 0 auto;
+  width: 100px;
+}
+
